@@ -29,3 +29,11 @@ ServerStatus-Toyo是ServerStatu项目的优化/修改版
 服务端查看日志：tail -f /tmp/serverstatus_server.log
 
 Caddy配置文件：/usr/local/caddy/caddy
+
+## 参考
+
+https://github.com/tenyue/ServerStatus
+https://github.com/ToyoDAdoubi/ServerStatus-Toyo
+https://www.aptx.xin/serverstatus-hotaru.html
+https://lexsion.com/index.php/archives/124
+https://sunpma.com/773.html
