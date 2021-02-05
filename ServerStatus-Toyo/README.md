@@ -1,6 +1,16 @@
+## 简介
+
 ServerStatus-Toyo是一个可以同时监控多台服务器的云探针程序，直接使用一键脚本安装即可，即简单又方便
 
 ServerStatus-Toyo是ServerStatu项目的优化/修改版
+
+## 安装
+
+执行下面的代码下载再运行管理脚本
+
+> wget -N --no-check-certificate https://raw.githubusercontent.com/4iri/Sundry/main/ServerStatus-Toyo/status.sh chmod +x status.sh
+
+## 目录位置
 
 安装目录：/usr/local/ServerStatus
 
