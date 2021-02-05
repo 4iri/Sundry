@@ -14,7 +14,7 @@ ServerStatus-Toyo是ServerStatu项目的优化/修改版
 
 ## 演示
 
-[演示站](https://jk.sunpma.com/)
+https://jk.sunpma.com/
 
 ## 目录位置
 
