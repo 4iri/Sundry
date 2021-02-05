@@ -10,7 +10,19 @@ ServerStatus-Toyo是ServerStatus项目的优化/修改版
 
 执行下面的代码下载再运行管理脚本
 
-> wget -N --no-check-certificate https://raw.githubusercontent.com/4iri/Sundry/main/ServerStatus-Toyo/status.sh chmod +x status.sh
+``` bash
+wget -N --no-check-certificate https://raw.githubusercontent.com/4iri/Sundry/main/ServerStatus-Toyo/status.sh chmod +x status.sh
+```
+
+下载脚本后，根据需要安装客户端或者服务端
+
+``` bash
+# 显示客户端管理菜单
+bash status.sh c
+ 
+# 显示服务端管理菜单
+bash status.sh s
+```
 
 ## 演示
 
