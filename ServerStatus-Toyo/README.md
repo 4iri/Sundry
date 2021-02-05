@@ -1,3 +1,5 @@
+怎么说呢 本来是打算安装 不过发现脚本里面的 caddy包 404了 然后就自己换了一下源
+
 ## 简介
 
 ServerStatus-Toyo是一个可以同时监控多台服务器的云探针程序，直接使用一键脚本安装即可，即简单又方便
@@ -9,6 +11,10 @@ ServerStatus-Toyo是ServerStatu项目的优化/修改版
 执行下面的代码下载再运行管理脚本
 
 > wget -N --no-check-certificate https://raw.githubusercontent.com/4iri/Sundry/main/ServerStatus-Toyo/status.sh chmod +x status.sh
+
+## 演示
+
+[演示站](https://jk.sunpma.com/)
 
 ## 目录位置
 
