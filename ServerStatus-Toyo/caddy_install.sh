@@ -51,11 +51,11 @@ Download_caddy(){
 	fi
 	
 	if [[ ${bit} == "x86_64" ]]; then
-		wget --no-check-certificate -O "caddy_linux.tar.gz" "https://github.com/caddyserver/caddy/releases/download/v1.0.0/caddy_v1.0.0_linux_amd64.tar.gz"
+		wget --no-check-certificate -O "caddy_linux.tar.gz" "https://github.com.cnpmjs.org/caddyserver/caddy/releases/download/v1.0.0/caddy_v1.0.0_linux_amd64.tar.gz"
 	elif [[ ${bit} == "i386" || ${bit} == "i686" ]]; then
-		wget --no-check-certificate -O "caddy_linux.tar.gz" "https://github.com/caddyserver/caddy/releases/download/v1.0.0/caddy_v1.0.0_linux_386.tar.gz"
+		wget --no-check-certificate -O "caddy_linux.tar.gz" "https://github.com.cnpmjs.org/caddyserver/caddy/releases/download/v1.0.0/caddy_v1.0.0_linux_386.tar.gz"
 	elif [[ ${bit} == "armv7l" ]]; then
-		wget --no-check-certificate -O "caddy_linux.tar.gz" "https://github.com/caddyserver/caddy/releases/download/v1.0.0/caddy_v1.0.0_linux_arm7.tar.gz"
+		wget --no-check-certificate -O "caddy_linux.tar.gz" "https://github.com.cnpmjs.org/caddyserver/caddy/releases/download/v1.0.0/caddy_v1.0.0_linux_arm7.tar.gz"
 	else
 		echo -e "${Error_font_prefix}[错误]${Font_suffix} 不支持 [${bit}] ! 请向本站反馈[]中的名称，我会看看是否可以添加支持。" && exit 1
 	fi
@@ -71,14 +71,14 @@ Download_caddy(){
 }
 Service_caddy(){
 	if [[ ${release} = "centos" ]]; then
-		if ! wget --no-check-certificate https://raw.githubusercontent.com/ToyoDAdoubi/doubi/master/service/caddy_centos -O /etc/init.d/caddy; then
+		if ! wget --no-check-certificate https://raw.sevencdn.com/ToyoDAdoubi/doubi/master/service/caddy_centos -O /etc/init.d/caddy; then
 			echo -e "${Error_font_prefix}[错误]${Font_suffix} Caddy服务 管理脚本下载失败 !" && exit 1
 		fi
 		chmod +x /etc/init.d/caddy
 		chkconfig --add caddy
 		chkconfig caddy on
 	else
-		if ! wget --no-check-certificate https://raw.githubusercontent.com/ToyoDAdoubi/doubi/master/service/caddy_debian -O /etc/init.d/caddy; then
+		if ! wget --no-check-certificate https://raw.sevencdn.com/ToyoDAdoubi/doubi/master/service/caddy_debian -O /etc/init.d/caddy; then
 			echo -e "${Error_font_prefix}[错误]${Font_suffix} Caddy服务 管理脚本下载失败 !" && exit 1
 		fi
 		chmod +x /etc/init.d/caddy
